@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow" />
+    <meta name="language" content="EN">
+    <title>Site layout by Bootstrap 3</title>
+    <meta name="description" content="Creating site by Bootstrap 3 only" />
+    <meta name="keywords" content="site, layout, bootstrap, grid, slider " />
+
+    <!-- Essential icons -->
+    <link rel="icon" href="./img/favicon/bootstrap-favicon-32x32.png" type="image/png" sizes="32x32">
+    <link rel="icon" href="./img/favicon/bootstrap-favicon-16x16.png" type="image/png" sizes="16x16">
+    <link rel="apple-touch-icon" href="./img/favicon/apple-touch-icon.png" sizes="180x180">
+
+    <!-- Essential tags for social media sharing -->
+    <meta property="og:title" content="Creating site by Bootstrap 3 only">
+    <meta property="og:type" content="site, layout, bootstrap, grid, slider">
+    <meta property="og:url" content="https://getbootstrap.com/docs/3.3/getting-started/">
+    <meta property="og:image" content="./img/bootstrap-image.png">
+    <meta property="og:site_name" content="Site layout by Bootstrap 3">
+    <meta property="og:description" content="Creating site layout by Bootstrap 3 only">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+        integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="./style/custom.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="navbar-header col-md-4 col-sm-3 col-xs-12">
+                        <a class="navbar-brand-fixed-top" href="./index.html"><img class="logo"
+                                src="./img/bootstrap-logo.png" alt="Bootstrap logotip" title="Bootstrap logo"></a>
+                    </div>
+                    <div class="col-md-7 col-sm-7 col-xs-12">
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item active"><a href="./index.html" title="Main Page">Main Page</a></li>
+                            <li class="nav-item"><a href="#" title="About us">About Us</a></li>
+                            <li class="nav-item"><a href="#" title="Our contacts">Contacts</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-1 col-sm-2 col-xs-12">
+                        <button type="button" class="btn btn-primary navbar-btn" data-toggle="modal"
+                            data-target="#modal-1" title="Call to us">Call
+                            Us</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="modal fade" id="modal-1">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button class="close" type="button" data-dismiss="modal" title="Close">
+                            <span class="glyphicon glyphicon-remove-circle close-modal-sign" aria-hidden="true"></span>
+                        </button>
+                        <h2 class="modal-title">Our phone numbers</h2>
+                    </div>
+                    <div class="modal-body">
+                        <ul class="list-group">
+                            <li class="list-group-item phone-numbers"><a href="tel:+380973657891"
+                                    title="Call to +380973657891">+380973657891</a></li>
+                            <li class="list-group-item phone-numbers"><a href="tel:+380508945601"
+                                    title="Call to +380508945601">+380508945601</a></li>
+                            <li class="list-group-item phone-numbers"><a href="tel:+380660981274"
+                                    title="Call to +380660981274">+380660981274</a></li>
+                            <li class="list-group-item phone-numbers"><a href="tel:+380934559217"
+                                    title="Call to +380934559217">+380934559217</a></li>
+                            <li class="list-group-item phone-numbers"><a href="tel:+380677035890"
+                                    title="Call to +380677035890">+380677035890</a></li>
+                        </ul>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-default" type="button" data-dismiss="modal" title="Close">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section>
+            <div id="carousel" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li class="active" data-target="#carousel" data-slide-to="0"></li>
+                    <li data-target="#carousel" data-slide-to="1"></li>
+                    <li data-target="#carousel" data-slide-to="2"></li>
+                    <li data-target="#carousel" data-slide-to="3"></li>
+                </ol>
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <img class="slider-img" src="./img/slider-1.jpg" alt="Motivational picture">
+                        <div class="carousel-caption">
+                            <h3>First Slide</h3>
+                            <p>Description of the first slide</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img class="slider-img" src="./img/slider-2.jpg" alt="Motivational picture">
+                        <div class="carousel-caption">
+                            <h3>Second Slide</h3>
+                            <p>Description of the second slide</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img class="slider-img" src="./img/slider-3.jpg" alt="Motivational picture">
+                        <div class="carousel-caption">
+                            <h3>Third Slide</h3>
+                            <p>Description of the third slide</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img class="slider-img" src="./img/slider-4.jpg" alt="Winston Churchill photo">
+                        <div class="carousel-caption">
+                            <h3>Fourth Slide</h3>
+                            <p>Description of the fourth slide</p>
+                        </div>
+                    </div>
+                </div>
+                <a href="#carousel" class="left carousel-control" data-slide="prev" role="button">
+                    <span class="glyphicon glyphicon-chevron-left arrow-slider" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a href="#carousel" class="right carousel-control" data-slide="next" role="button">
+                    <span class="glyphicon glyphicon-chevron-right arrow-slider" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </section>
+        <section>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <div id="accordion" class="panel-group" role="tablist" aria-multiselectable="true">
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="heading-1">
+                                    <h3 class="panel-title">
+                                        <a href="#collapse-1" role="button" data-parent="#accordion"
+                                            data-toggle="collapse" aria-expanded="true" aria-controls="collapse-1"
+                                            title="Open first panel">
+                                            <span class="glyphicon glyphicon-plus-sign sign-plus-acordion"
+                                                aria-hidden="true"></span>Open
+                                            first panel</a>
+                                    </h3>
+                                </div>
+                                <div id="collapse-1" class="panel-collapse collapse" role="tabpanel"
+                                    aria-labelledby="heading-1">
+                                    <div class="panel-body">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis,
+                                            consequatur eaque, aspernatur in incidunt cum, fugiat repellendus obcaecati
+                                            quisquam odio ipsum suscipit ullam? Optio, obcaecati esse excepturi fuga
+                                            suscipit libero.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="heading-2">
+                                    <h3 class="panel-title">
+                                        <a class="collapsed" href="#collapse-2" role="button" data-parent="#accordion"
+                                            data-toggle="collapse" aria-expanded="false" aria-controls="collapse-2"
+                                            title="Open second panel"><span
+                                                class="glyphicon glyphicon-plus-sign sign-plus-acordion"
+                                                aria-hidden="true"></span>Open
+                                            second panel</a>
+                                    </h3>
+                                </div>
+                                <div id="collapse-2" class="panel-collapse collapse" role="tabpanel"
+                                    aria-labelledby="heading-2">
+                                    <div class="panel-body">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci magnam
+                                            cumque voluptatum id? Repudiandae earum adipisci cupiditate dolore officiis,
+                                            voluptas facilis eveniet, praesentium quidem doloremque numquam, quae
+                                            molestias accusamus vitae.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="heading-3">
+                                    <h3 class="panel-title">
+                                        <a class="collapsed" href="#collapse-3" role="button" data-parent="#accordion"
+                                            data-toggle="collapse" aria-expanded="false" aria-controls="collapse-3"
+                                            title="Open third panel"><span
+                                                class="glyphicon glyphicon-plus-sign sign-plus-acordion"
+                                                aria-hidden="true"></span>Open
+                                            third panel</a>
+                                    </h3>
+                                </div>
+                                <div id="collapse-3" class="panel-collapse collapse" role="tabpanel"
+                                    aria-labelledby="heading-3">
+                                    <div class="panel-body">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum odit tenetur
+                                            modi, culpa deserunt nulla saepe cupiditate id vero doloribus in quod
+                                            pariatur, consequatur illo molestiae sint rerum ratione repellendus?</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="heading-4">
+                                    <h3 class="panel-title">
+                                        <a class="collapsed" href="#collapse-4" role="button" data-parent="#accordion"
+                                            data-toggle="collapse" aria-expanded="false" aria-controls="collapse-4"
+                                            title="Open fourth panel"><span
+                                                class="glyphicon glyphicon-plus-sign sign-plus-acordion"
+                                                aria-hidden="true"></span>Open
+                                            fourth panel</a>
+                                    </h3>
+                                </div>
+                                <div id="collapse-4" class="panel-collapse collapse" role="tabpanel"
+                                    aria-labelledby="heading-4">
+                                    <div class="panel-body">
+                                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor deleniti
+                                            suscipit nemo nostrum tenetur, distinctio illum molestiae accusantium
+                                            inventore voluptate, possimus explicabo reiciendis enim perspiciatis impedit
+                                            in quos non deserunt?</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-8 col-sm-6 col-xs-12">
+                        <div class="tabs">
+                            <ul class="nav nav-tabs" role="tablist">
+                                <li class="tabs-li active" role="presentation"><a href="#tab-1" data-toggle="tab"
+                                        aria-controls="tab-1" role="tab" title="First Tab">First Tab</a>
+                                </li>
+                                <li class="tabs-li" role="presentation"><a href="#tab-2" data-toggle="tab"
+                                        aria-controls="tab-2" role="tab" title="Second Tab">Second
+                                        Tab</a></li>
+                                <li class="tabs-li" role="presentation"><a href="#tab-3" data-toggle="tab"
+                                        aria-controls="tab-3" role="tab" title="Third Tab">Third
+                                        Tab</a></li>
+                                <li class="tabs-li" role="presentation"><a href="#tab-4" data-toggle="tab"
+                                        aria-controls="tab-4" role="tab" title="Fourth Tab">Fourth
+                                        Tab</a></li>
+                                <li class="tabs-li" role="presentation"><a href="#tab-5" data-toggle="tab"
+                                        aria-controls="tab-5" role="tab" title="Fifth Tab">Fifth
+                                        Tab</a></li>
+                            </ul>
+                            <div class="tab-content content-inside-tabs">
+                                <div class="tab-pane fade in active" id="tab-1" role="tabpanel">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, sapiente?
+                                        Perferendis iste velit architecto nostrum debitis. Illo pariatur vel maiores
+                                        quidem, nostrum inventore dolorum dolore. Obcaecati dignissimos explicabo
+                                        molestiae esse. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi,
+                                        sapiente?
+                                        Perferendis iste velit architecto nostrum debitis. Illo pariatur vel maiores
+                                        quidem, nostrum inventore dolorum dolore. Obcaecati dignissimos explicabo
+                                        molestiae esse.</p>
+                                    <button type="button" class="btn btn-primary pull-right" data-toggle="modal"
+                                        data-target="#popup-1" title="Open first popup">Open first popup</button>
+                                </div>
+                                <div class="tab-pane fade" id="tab-2" role="tabpanel">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, sapiente?
+                                        Perferendis iste velit architecto nostrum debitis. Illo pariatur vel maiores
+                                        quidem, nostrum inventore dolorum dolore. Obcaecati dignissimos explicabo
+                                        molestiae esse. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
+                                        aspernatur quos
+                                        officia pariatur sit similique modi recusandae hic consequuntur repudiandae
+                                        laboriosam nisi possimus aliquid earum, dolore doloremque perspiciatis laborum
+                                        nemo.</p>
+                                    <button type="button" class="btn btn-primary pull-right" data-toggle="modal"
+                                        data-target="#popup-2" title="Open second popup">Open second popup</button>
+                                </div>
+                                <div class="tab-pane fade" id="tab-3" role="tabpanel">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, sapiente?
+                                        Perferendis iste velit architecto nostrum debitis. Illo pariatur vel maiores
+                                        quidem, nostrum inventore dolorum dolore. Obcaecati dignissimos explicabo
+                                        molestiae esse. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum,
+                                        itaque? Officiis
+                                        distinctio enim tempore repellat incidunt quae aperiam, mollitia necessitatibus
+                                        similique quia, illo, vero maxime eius molestias. Quam, quasi necessitatibus?
+                                    </p>
+                                    <button type="button" class="btn btn-primary pull-right" data-toggle="modal"
+                                        data-target="#popup-3" title="Open third popup">Open third popup</button>
+                                </div>
+                                <div class="tab-pane fade" id="tab-4" role="tabpanel">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, sapiente?
+                                        Perferendis iste velit architecto nostrum debitis. Illo pariatur vel maiores
+                                        quidem, nostrum inventore dolorum dolore. Obcaecati dignissimos explicabo
+                                        molestiae esse. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi,
+                                        sapiente?
+                                        Perferendis iste velit architecto nostrum debitis. Illo pariatur vel maiores
+                                        quidem, nostrum inventore dolorum dolore. Obcaecati dignissimos explicabo
+                                        molestiae esse.
+                                    </p>
+                                    <button type="button" class="btn btn-primary pull-right" data-toggle="modal"
+                                        data-target="#popup-4" title="Open fourth popup">Open fourth popup</button>
+                                </div>
+                                <div class="tab-pane fade" id="tab-5" role="tabpanel">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, sapiente?
+                                        Perferendis iste velit architecto nostrum debitis. Illo pariatur vel maiores
+                                        quidem, nostrum inventore dolorum dolore. Obcaecati dignissimos explicabo
+                                        molestiae esse. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
+                                        aspernatur quos
+                                        officia pariatur sit similique modi recusandae hic consequuntur repudiandae
+                                        laboriosam nisi possimus aliquid earum, dolore doloremque perspiciatis laborum
+                                        nemo.
+                                    </p>
+                                    <button type="button" class="btn btn-primary pull-right" data-toggle="modal"
+                                        data-target="#popup-5" title="Open fifth popup">Open fifth popup</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="popup-1" role="dialog">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button class="close" type="button" data-dismiss="modal" title="Close">
+                                <span class="glyphicon glyphicon-remove-circle close-modal-sign"
+                                    aria-hidden="true"></span>
+                            </button>
+                            <h4 class="modal-title">Your are inside First popup</h4>
+                        </div>
+                        <div class="modal-body">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus voluptates voluptas
+                                facilis, numquam, qui incidunt soluta eos delectus porro distinctio, veritatis possimus
+                                ea dicta ab neque eum? Enim, odio architecto. Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Voluptatibus voluptates voluptas
+                                facilis, numquam, qui incidunt soluta eos delectus porro distinctio, veritatis possimus
+                                ea dicta ab neque eum? Enim, odio architecto. Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Voluptatibus voluptates voluptas
+                                facilis, numquam, qui incidunt soluta eos delectus porro distinctio, veritatis possimus
+                                ea dicta ab neque eum? Enim, odio architecto.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-default" type="button" data-dismiss="modal"
+                                title="Close">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="popup-2" role="dialog">
+                <div class="modal-dialog modal-md" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button class="close" type="button" data-dismiss="modal" title="Close">
+                                <span class="glyphicon glyphicon-remove-circle close-modal-sign"
+                                    aria-hidden="true"></span>
+                            </button>
+                            <h4 class="modal-title">Your are inside Second popup</h4>
+                        </div>
+                        <div class="modal-body">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus voluptates voluptas
+                                facilis, numquam, qui incidunt soluta eos delectus porro distinctio, veritatis possimus
+                                ea dicta ab neque eum? Enim, odio architecto. Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Voluptatibus voluptates voluptas
+                                facilis, numquam, qui incidunt soluta eos delectus porro distinctio, veritatis possimus
+                                ea dicta ab neque eum? Enim, odio architecto. Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Voluptatibus voluptates voluptas
+                                facilis, numquam, qui incidunt soluta eos delectus porro distinctio, veritatis possimus
+                                ea dicta ab neque eum? Enim, odio architecto.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-default" type="button" data-dismiss="modal"
+                                title="Close">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="popup-3" role="dialog">
+                <div class="modal-dialog modal-sm" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button class="close" type="button" data-dismiss="modal" title="Close">
+                                <span class="glyphicon glyphicon-remove-circle close-modal-sign"
+                                    aria-hidden="true"></span>
+                            </button>
+                            <h4 class="modal-title">Your are inside Third popup</h4>
+                        </div>
+                        <div class="modal-body">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus voluptates voluptas
+                                facilis, numquam, qui incidunt soluta eos delectus porro distinctio, veritatis possimus
+                                ea dicta ab neque eum? Enim, odio architecto. Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Voluptatibus voluptates voluptas
+                                facilis, numquam, qui incidunt soluta eos delectus porro distinctio, veritatis possimus
+                                ea dicta ab neque eum? Enim, odio architecto. Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Voluptatibus voluptates voluptas
+                                facilis, numquam, qui incidunt soluta eos delectus porro distinctio, veritatis possimus
+                                ea dicta ab neque eum? Enim, odio architecto.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-default" type="button" data-dismiss="modal"
+                                title="Close">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="popup-4" role="dialog">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button class="close" type="button" data-dismiss="modal" title="Close">
+                                <span class="glyphicon glyphicon-remove-circle close-modal-sign"
+                                    aria-hidden="true"></span>
+                            </button>
+                            <h4 class="modal-title">Your are inside Fourth popup</h4>
+                        </div>
+                        <div class="modal-body">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus voluptates voluptas
+                                facilis, numquam, qui incidunt soluta eos delectus porro distinctio, veritatis possimus
+                                ea dicta ab neque eum? Enim, odio architecto. Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Voluptatibus voluptates voluptas
+                                facilis, numquam, qui incidunt soluta eos delectus porro distinctio, veritatis possimus
+                                ea dicta ab neque eum? Enim, odio architecto. Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Voluptatibus voluptates voluptas
+                                facilis, numquam, qui incidunt soluta eos delectus porro distinctio, veritatis possimus
+                                ea dicta ab neque eum? Enim, odio architecto.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-default" type="button" data-dismiss="modal"
+                                title="Close">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="popup-5" role="dialog">
+                <div class="modal-dialog modal-md" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button class="close" type="button" data-dismiss="modal" title="Close">
+                                <span class="glyphicon glyphicon-remove-circle close-modal-sign"
+                                    aria-hidden="true"></span>
+                            </button>
+                            <h4 class="modal-title">Your are inside Fifth popup</h4>
+                        </div>
+                        <div class="modal-body">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus voluptates voluptas
+                                facilis, numquam, qui incidunt soluta eos delectus porro distinctio, veritatis possimus
+                                ea dicta ab neque eum? Enim, odio architecto. Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Voluptatibus voluptates voluptas
+                                facilis, numquam, qui incidunt soluta eos delectus porro distinctio, veritatis possimus
+                                ea dicta ab neque eum? Enim, odio architecto. Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Voluptatibus voluptates voluptas
+                                facilis, numquam, qui incidunt soluta eos delectus porro distinctio, veritatis possimus
+                                ea dicta ab neque eum? Enim, odio architecto.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-default" type="button" data-dismiss="modal"
+                                title="Close">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <form class="form-inline text-center" action="./handler.php" method="post" name="user-form">
+                <div class="form-group">
+                    <label for="input-email"></label>
+                    <input type="email" class="form-control" id="input-email" name="email"
+                        placeholder="Type your e-mail" value="Your e-mail" size="28" autofocus required
+                        title="Please type your email">
+                </div>
+                <div class="form-group">
+                    <label for="input-phone"></label>
+                    <input type="tel" class="form-control" id="input-phone" name="phone" placeholder="+380"
+                        value="Your phone" minlength="13" maxlength="13" required title="Please type your phone"
+                        pattern="[\+]\d{3}\s[\(]\d{2}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}">
+                </div>
+                <button type="submit" class="btn btn-primary btn-submit-form" value="Submit" title="Submit">
+                    Submit
+                </button>
+            </form>
+        </section>
+        <section>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6">
+                        <div class="thumbnail">
+                            <img class="img-responsive img-thumbnail" src="./img/card-product-1.jpg"
+                                alt="Action camera GoPro HERO 7 Black" title="Action camera GoPro HERO 7 Black">
+                            <div class="caption">
+                                <h3>Action camera GoPro HERO 7 Black</h3>
+                                <p>Equipment:
+                                    HERO7 Black Camera, Battery, The Frame (HERO7 Black), Curved Adhesive Mount, Flat
+                                    Adhesive Mount, Mounting Buckle, USB-C Cable, User Manual, Warranty Card</p>
+                                <p><a href="#" class="btn btn-primary btn-buy-item" role="button"
+                                        title="Buy this item">Buy this
+                                        item</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="thumbnail">
+                            <img class="img-responsive img-thumbnail" src="./img/card-product-2.jpg"
+                                alt="Action camera ThiEYE i20" title="Action camera ThiEYE i20">
+                            <div class="caption">
+                                <h3>Action camera ThiEYE i20 Black</h3>
+                                <p>Equipment:
+                                    Action camera, waterproof box, extra back cover, rechargeable battery, quick release
+                                    mount, extension mount, adhesive sticker (2 pcs.), MicroUSB cable, straight rail
+                                    mount, curved rail</p>
+                                <p><a href="#" class="btn btn-primary btn-buy-item" role="button"
+                                        title="Buy this item">Buy this
+                                        item</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="thumbnail">
+                            <img class="img-responsive img-thumbnail" src="./img/card-product-3.jpg"
+                                alt="Action camera Sony HDR-AS50" title="Action camera Sony HDR-AS50">
+                            <div class="caption">
+                                <h3>Action camera Sony HDR-AS50</h3>
+                                <p>Equipment:
+                                    Action camera, NP-BX1 battery pack, user manual, aqua box (MPK-UWH1), platform
+                                    mount, MicroUSB cable, straight rail
+                                    mount, curved rail
+                                </p>
+                                <p><a href="#" class="btn btn-primary btn-buy-item" role="button"
+                                        title="Buy this item">Buy this
+                                        item</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="thumbnail">
+                            <img class="img-responsive img-thumbnail" src="./img/card-product-4.jpg"
+                                alt="Action camera Aspiring Repeat 2 ULTRA HD 4K"
+                                title="Action camera Aspiring Repeat 2 ULTRA HD 4K">
+                            <div class="caption">
+                                <h3>Action camera Aspiring Repeat 2 ULTRA HD 4K</h3>
+                                <p>Equipment:
+                                    Action camera, boxing mounts, boxing, documentation, MicroUSB cable, straight rail
+                                    mount, USB-C Cable, curved rail, User Manual, Warranty Card
+                                </p>
+                                <p><a href="#" class="btn btn-primary btn-buy-item" role="button"
+                                        title="Buy this item">Buy this
+                                        item</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- JQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

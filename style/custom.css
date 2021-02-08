@@ -1,0 +1,101 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 10 version
+*/
+
+body section {
+    padding-top: 50px;
+}
+
+.logo {
+    padding-top: 5px;
+}
+
+nav button:nth-child(1) {
+    background: #573b7e;    
+    text-transform: uppercase;    
+}
+
+.nav-item {
+    padding-right: 30px;    
+}
+
+.nav-item a {
+    text-transform: uppercase;    
+}
+
+.phone-numbers a {
+    color: #573b7e;
+    font-size: 20px;
+}
+
+.phone-numbers a:hover {
+    color: #fff;
+    background: #573b7e;
+}
+
+.close-modal-sign {
+    font-size: 32px;
+}
+
+.slider-img {    
+    margin: 0 auto;
+    width: 60%;
+}
+
+.arrow-slider {
+    color: #573b7e;
+}
+
+.sign-plus-acordion {
+    color: #573b7e;
+    padding-right: 5px;       
+}
+
+.panel-title a {
+    font-size: 26px;
+}
+
+.tabs-li a {
+    font-size: 24px;
+    font-weight: bold;
+    color: #573b7e;     
+}
+
+.content-inside-tabs button {
+    background: #573b7e;    
+    margin-top: 30px;
+}
+
+.btn-submit-form {
+    background: #573b7e;     
+    padding: 10px 25px;
+    font-size: 20px; 
+}
+
+.form-group input {
+    min-height: 50px;
+}
+
+.caption {
+    height: 260px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; 
+    -webkit-box-align: center; 
+        -ms-flex-align: center; 
+            align-items: center;    
+}
+
+.btn-buy-item {
+    background: #573b7e;
+}
